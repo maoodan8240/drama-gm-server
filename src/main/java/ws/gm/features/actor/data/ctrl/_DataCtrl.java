@@ -78,7 +78,6 @@ public class _DataCtrl extends AbstractHttpMessageCtrl<PlayerLoginLog> implement
         int newCount = PLAYER_LOGIN_LOG_DAO.findNewPlayer();
         int activeDeviceCount = PLAYER_LOGIN_LOG_DAO.findActiveDevice();
         int activeAccount = PLAYER_LOGIN_LOG_DAO.findActiveAccount();
-        PAYMENT_ORDER_DAO.init(MONGO_DB_CLIENT, MagicWords_Mongodb.TopLevelPojo_All_Common);
         int todayPaymentSum = PAYMENT_ORDER_DAO.findPaymentSum();
         int newPlayerNewPayment = PAYMENT_ORDER_DAO.findNewPlayerNewPaymentCount();
         int todayPaymentCount = PAYMENT_ORDER_DAO.findPaymentCount();

@@ -21,12 +21,13 @@ public class Ws_Gm_HttpServer {
             logger.info("HttpServer start ...");
             int port = AppConfig.getInt(AppConfig.Key.Gm_Web_Server_Port);
             int ConnectionsCount = AppConfig.getInt(Key.Gm_Web_Server_Connections_Count);
-            //TODO 端口和同时接受请求的数量需要在配置文件中配置
-            HttpServer server = HttpServer.create(new InetSocketAddress(port), ConnectionsCount);
+            //TODO 端口和同时接受请求的数量需要在配置文件配置
+            InetSocketAddress address = new InetSocketAddress(AppConfig.getIp(), port);
+            HttpServer server = HttpServer.create(address, ConnectionsCount);
             server.createContext("/", new Ws_Gm_HttpServerHandler());
             server.setExecutor(Executors.newCachedThreadPool());
             server.start();
-            logger.info("HttpServer: start send! listening port ={}", port);
+            logger.info("HttpServer: start send! listening address ={}", address);
         } catch (Exception e) {
             throw new Ws_HttpServerException("HttpServer启动异常！", e);
         }
