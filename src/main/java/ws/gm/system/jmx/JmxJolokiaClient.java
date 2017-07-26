@@ -18,6 +18,7 @@ import java.util.Date;
 
 public class JmxJolokiaClient {
     private static final Logger LOGGER = LoggerFactory.getLogger(JmxJolokiaClient.class);
+    // private static final String JMX_ADDRESS = "http://192.168.0.56:20401/jmx/";
     private static final String JMX_ADDRESS = "http://106.75.33.217:20401/jmx/";
 
 

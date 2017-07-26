@@ -5,6 +5,8 @@ import com.alibaba.fastjson.JSON;
 import com.sun.net.httpserver.Headers;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ws.common.utils.message.interfaces.Message;
 import ws.gm.system.actor.WsActorSystem;
 import ws.gm.system.actor.WsGmActorSystemPath;
@@ -21,9 +23,17 @@ import java.net.URI;
  * Created by lee on 17-2-22.
  */
 public class Ws_Gm_HttpServerHandler implements HttpHandler {
+    private static final Logger LOGGER = LoggerFactory.getLogger(Ws_Gm_HttpServerHandler.class);
+
+    public Ws_Gm_HttpServerHandler() {
+    }
 
     @Override
     public void handle(HttpExchange exchange) throws IOException {
+        LOGGER.debug("111--->{}", exchange.getHttpContext().getAttributes());
+        LOGGER.debug("222--->{}", exchange.getRequestMethod());
+        LOGGER.debug("333--->{}", exchange.getResponseHeaders().entrySet());
+        LOGGER.debug("444--->{} ", exchange.getRequestURI(), exchange.getRequestHeaders().entrySet());
         String method = exchange.getRequestMethod();
         if (method.equalsIgnoreCase("POST")) {
             URI uri = exchange.getRequestURI();

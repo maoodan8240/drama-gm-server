@@ -8,6 +8,7 @@ import ws.common.redis.RedisOpration;
 import ws.common.utils.di.GlobalInjector;
 import ws.gm.system.actor.WsActorSystem;
 import ws.gm.system.config.AppConfig;
+import ws.gm.system.config.AppConfig.Key;
 import ws.gm.system.di.GlobalInjectorUtils;
 import ws.gm.system.di.dbClients.GameCommonDBClient;
 import ws.gm.system.httpServer.Ws_Gm_HttpServer;
@@ -36,7 +37,7 @@ public class Launcher {
             _redisInit();
             _mongodbInit();
             _gameCommonMongodbInit();
-            
+
             LauncherUtils._redisInit_Test();
             LauncherUtils._mongodbInit_Test();
             Ws_Gm_HttpServer.start();
@@ -63,7 +64,8 @@ public class Launcher {
         String password = AppConfig.getString(AppConfig.Key.WS_Common_Config_mongodb_password);
         String dbName = AppConfig.getString(AppConfig.Key.WS_Common_Config_mongodb_dbName);
         int connectionsPerHost = AppConfig.getInt(AppConfig.Key.WS_Common_Config_mongodb_connectionsPerHost);
-        MongoConfig config = new MongoConfig(host, port, userName, password, dbName, connectionsPerHost);
+        int minConnectionsPerHost = AppConfig.getInt(AppConfig.Key.WS_Common_Config_mongodb_minConnectionsPerHost);
+        MongoConfig config = new MongoConfig(host, port, userName, password, dbName, minConnectionsPerHost, connectionsPerHost);
         GlobalInjector.getInstance(MongoDBClient.class).init(config);
     }
 
@@ -73,8 +75,9 @@ public class Launcher {
         String userName = AppConfig.getString(AppConfig.Key.WS_Common_Config_mongodb_1_userName);
         String password = AppConfig.getString(AppConfig.Key.WS_Common_Config_mongodb_1_password);
         String dbName = AppConfig.getString(AppConfig.Key.WS_Common_Config_mongodb_1_dbName);
-        int connectionsPerHost = AppConfig.getInt(AppConfig.Key.WS_Common_Config_mongodb_1_connectionsPerHost);
-        MongoConfig config = new MongoConfig(host, port, userName, password, dbName, connectionsPerHost);
+        int connectionsPerHost = AppConfig.getInt(Key.WS_Common_Config_mongodb_1_connectionsPerHost);
+        int minConnectionsPerHost = AppConfig.getInt(Key.WS_Common_Config_mongodb_1_minConnectionsPerHost);
+        MongoConfig config = new MongoConfig(host, port, userName, password, dbName, minConnectionsPerHost, connectionsPerHost);
         GlobalInjector.getInstance(GameCommonDBClient.class).init(config);
     }
 
