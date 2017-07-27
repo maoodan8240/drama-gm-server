@@ -30,22 +30,21 @@ public class AppConfig {
         public static final String WS_Common_Config_redis_sentinelIpAndPorts = "WS-Common-Config.redis.sentinelIpAndPorts";
         public static final String WS_Common_Config_redis_masterNames = "WS-Common-Config.redis.masterNames";
 
-        public static final String WS_Common_Config_mongodb_minConnectionsPerHost = "WS-Common-Config.mongodb.minConnectionsPerHost";
-        public static final String WS_Common_Config_mongodb_connectionsPerHost = "WS-Common-Config.mongodb.connectionsPerHost";
-        public static final String WS_Common_Config_mongodb_dbName = "WS-Common-Config.mongodb.dbName";
-        public static final String WS_Common_Config_mongodb_host = "WS-Common-Config.mongodb.host";
-        public static final String WS_Common_Config_mongodb_password = "WS-Common-Config.mongodb.password";
-        public static final String WS_Common_Config_mongodb_port = "WS-Common-Config.mongodb.port";
-        public static final String WS_Common_Config_mongodb_userName = "WS-Common-Config.mongodb.userName";
-
-        public static final String WS_Common_Config_mongodb_1_minConnectionsPerHost = "WS-Co1mmon-Config.mongodb-1.minConnectionsPerHost";
-        public static final String WS_Common_Config_mongodb_1_connectionsPerHost = "WS-Co1mmon-Config.mongodb-1.connectionsPerHost";
+        public static final String WS_Common_Config_mongodb_1_connectionsPerHost = "WS-Common-Config.mongodb-1.connectionsPerHost";
         public static final String WS_Common_Config_mongodb_1_dbName = "WS-Common-Config.mongodb-1.dbName";
         public static final String WS_Common_Config_mongodb_1_host = "WS-Common-Config.mongodb-1.host";
+        public static final String WS_Common_Config_mongodb_1_minConnectionsPerHost = "WS-Common-Config.mongodb-1.minConnectionsPerHost";
         public static final String WS_Common_Config_mongodb_1_password = "WS-Common-Config.mongodb-1.password";
         public static final String WS_Common_Config_mongodb_1_port = "WS-Common-Config.mongodb-1.port";
         public static final String WS_Common_Config_mongodb_1_userName = "WS-Common-Config.mongodb-1.userName";
-
+        
+        public static final String WS_Common_Config_mongodb_connectionsPerHost = "WS-Common-Config.mongodb.connectionsPerHost";
+        public static final String WS_Common_Config_mongodb_dbName = "WS-Common-Config.mongodb.dbName";
+        public static final String WS_Common_Config_mongodb_host = "WS-Common-Config.mongodb.host";
+        public static final String WS_Common_Config_mongodb_minConnectionsPerHost = "WS-Common-Config.mongodb.minConnectionsPerHost";
+        public static final String WS_Common_Config_mongodb_password = "WS-Common-Config.mongodb.password";
+        public static final String WS_Common_Config_mongodb_port = "WS-Common-Config.mongodb.port";
+        public static final String WS_Common_Config_mongodb_userName = "WS-Common-Config.mongodb.userName";
     }
 
     private static Config config;

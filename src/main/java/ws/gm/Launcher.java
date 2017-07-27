@@ -65,6 +65,7 @@ public class Launcher {
         String dbName = AppConfig.getString(AppConfig.Key.WS_Common_Config_mongodb_dbName);
         int connectionsPerHost = AppConfig.getInt(AppConfig.Key.WS_Common_Config_mongodb_connectionsPerHost);
         int minConnectionsPerHost = AppConfig.getInt(AppConfig.Key.WS_Common_Config_mongodb_minConnectionsPerHost);
+        logger.debug("_mongodbInit connectionsPerHost={} minConnectionsPerHost={}", connectionsPerHost, minConnectionsPerHost);
         MongoConfig config = new MongoConfig(host, port, userName, password, dbName, minConnectionsPerHost, connectionsPerHost);
         GlobalInjector.getInstance(MongoDBClient.class).init(config);
     }
@@ -77,6 +78,7 @@ public class Launcher {
         String dbName = AppConfig.getString(AppConfig.Key.WS_Common_Config_mongodb_1_dbName);
         int connectionsPerHost = AppConfig.getInt(Key.WS_Common_Config_mongodb_1_connectionsPerHost);
         int minConnectionsPerHost = AppConfig.getInt(Key.WS_Common_Config_mongodb_1_minConnectionsPerHost);
+        logger.debug("_gameCommonMongodbInit connectionsPerHost={} minConnectionsPerHost={}", connectionsPerHost, minConnectionsPerHost);
         MongoConfig config = new MongoConfig(host, port, userName, password, dbName, minConnectionsPerHost, connectionsPerHost);
         GlobalInjector.getInstance(GameCommonDBClient.class).init(config);
     }
