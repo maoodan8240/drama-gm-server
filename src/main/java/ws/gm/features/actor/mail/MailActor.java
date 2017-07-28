@@ -5,7 +5,7 @@ import ws.gm.features.actor.mail.ctrl.MailCtrl;
 import ws.gm.features.actor.mail.ctrl._MailCtrl;
 import ws.gm.system.httpServer.msg.HttpRequestMsg;
 import ws.gm.system.httpServer.msg.HttpResponseMsg;
-import ws.gm.system.httpServer.msg.MailMsg;
+import ws.gm.features.actor.mail.msg.MailMsg;
 import ws.gm.system.httpServer.utils.ResponseUtils;
 import ws.relationship.base.actor.WsActor;
 

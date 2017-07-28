@@ -40,4 +40,7 @@ public class WsGmActorSystemPath {
 
     public static final String Ws_Gm_Data = "data"; //活动
     public static final String Ws_Gm_Selection_Data = WS_Common_Selection_GmRoot + "/data";
+
+    public static final String Ws_Gm_WhiteBlackList = "whiteblacklist"; //黑白名单
+    public static final String Ws_Gm_Selection_WhiteBlackList = WS_Common_Selection_GmRoot + "whiteblacklist";
 }

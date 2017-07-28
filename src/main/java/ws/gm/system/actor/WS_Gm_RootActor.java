@@ -8,22 +8,23 @@ import ws.gm.features.actor.data.DataActor;
 import ws.gm.features.actor.dayRegister.DayRegisterActor;
 import ws.gm.features.actor.dayReport.DayReportActor;
 import ws.gm.features.actor.gmCommond.SendGmCommandMsgActor;
+import ws.gm.features.actor.gmCommond.msg.SendGmCommandMsg;
 import ws.gm.features.actor.mail.MailActor;
+import ws.gm.features.actor.mail.msg.MailMsg;
 import ws.gm.features.actor.paymentReport.PaymentReport;
 import ws.gm.features.actor.queryPlayerBasicInfo.QueryPlayerBasicInfoActor;
+import ws.gm.features.actor.queryPlayerBasicInfo.msg.QueryPlayerBasicInfoMsg;
 import ws.gm.features.actor.user.UserActor;
+import ws.gm.features.actor.user.msg.UserAuthRequestMsg;
+import ws.gm.features.actor.user.msg.UserAuthResponseMsg;
+import ws.gm.features.actor.user.msg.UserLoginRequestMsg;
+import ws.gm.features.actor.user.msg.UserRegisterRequestMsg;
+import ws.gm.features.actor.user.msg.UserRequestMsg;
 import ws.gm.features.actor.user.pojo.Permission;
+import ws.gm.features.actor.whiteblacklist.WhiteBlackListActor;
 import ws.gm.features.session.SessionManager;
 import ws.gm.system.httpServer.msg.HttpRequestMsg;
 import ws.gm.system.httpServer.msg.HttpResponseMsg;
-import ws.gm.system.httpServer.msg.MailMsg;
-import ws.gm.system.httpServer.msg.QueryPlayerBasicInfoMsg;
-import ws.gm.system.httpServer.msg.SendGmCommandMsg;
-import ws.gm.system.httpServer.msg.UserAuthRequestMsg;
-import ws.gm.system.httpServer.msg.UserAuthResponseMsg;
-import ws.gm.system.httpServer.msg.UserLoginRequestMsg;
-import ws.gm.system.httpServer.msg.UserRegisterRequestMsg;
-import ws.gm.system.httpServer.msg.UserRequestMsg;
 import ws.gm.system.httpServer.utils.ResponseUtils;
 import ws.relationship.base.actor.WsActor;
 import ws.relationship.utils.ActorMsgSynchronizedExecutor;
@@ -46,6 +47,8 @@ public class WS_Gm_RootActor extends WsActor {
         ActorRef ref6 = context().actorOf(Props.create(PaymentReport.class), WsGmActorSystemPath.Ws_Gm_PaymentReport);
         ActorRef ref7 = context().actorOf(Props.create(MailActor.class), WsGmActorSystemPath.Ws_Gm_Mail);
         ActorRef ref8 = context().actorOf(Props.create(DataActor.class), WsGmActorSystemPath.Ws_Gm_Data);
+        ActorRef ref9 = context().actorOf(Props.create(WhiteBlackListActor.class), WsGmActorSystemPath.Ws_Gm_WhiteBlackList);
+
         context().watch(ref1);
         context().watch(ref2);
         context().watch(ref4);
@@ -53,6 +56,7 @@ public class WS_Gm_RootActor extends WsActor {
         context().watch(ref6);
         context().watch(ref7);
         context().watch(ref8);
+        context().watch(ref9);
 
         context().watch(context().actorOf(Props.create(SendGmCommandMsgActor.class), WsGmActorSystemPath.Ws_Gm_SendGmCommandMsg));
     }

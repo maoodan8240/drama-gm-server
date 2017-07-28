@@ -5,7 +5,7 @@ import ws.gm.features.actor.gmCommond.ctrl.SendGmCommandMsgCtrl;
 import ws.gm.features.actor.gmCommond.ctrl._SendGmCommandMsgCtrl;
 import ws.gm.system.httpServer.msg.HttpRequestMsg;
 import ws.gm.system.httpServer.msg.HttpResponseMsg;
-import ws.gm.system.httpServer.msg.SendGmCommandMsg;
+import ws.gm.features.actor.gmCommond.msg.SendGmCommandMsg;
 import ws.gm.system.httpServer.utils.ResponseUtils;
 import ws.relationship.base.actor.WsActor;
 

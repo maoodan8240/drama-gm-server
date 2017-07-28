@@ -5,8 +5,8 @@ import ws.gm.features.actor.queryPlayerBasicInfo.ctrl.QueryPlayerBasicInfoCtrl;
 import ws.gm.features.actor.queryPlayerBasicInfo.ctrl._QueryPlayerBasicInfoCtrl;
 import ws.gm.system.httpServer.msg.HttpRequestMsg;
 import ws.gm.system.httpServer.msg.HttpResponseMsg;
-import ws.gm.system.httpServer.msg.QueryPlayerBasicInfoMsg;
-import ws.gm.system.httpServer.msg.QueryPlayerBasicInfoMsg.Request;
+import ws.gm.features.actor.queryPlayerBasicInfo.msg.QueryPlayerBasicInfoMsg;
+import ws.gm.features.actor.queryPlayerBasicInfo.msg.QueryPlayerBasicInfoMsg.Request;
 import ws.gm.system.httpServer.utils.ResponseUtils;
 import ws.relationship.base.actor.WsActor;
 

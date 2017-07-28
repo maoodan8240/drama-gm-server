@@ -8,11 +8,11 @@ import ws.gm.features.actor.user.ctrl.UserCtrl;
 import ws.gm.features.actor.user.pojo.User;
 import ws.gm.system.httpServer.msg.HttpRequestMsg;
 import ws.gm.system.httpServer.msg.HttpResponseMsg;
-import ws.gm.system.httpServer.msg.UserAuthRequestMsg;
-import ws.gm.system.httpServer.msg.UserAuthResponseMsg;
-import ws.gm.system.httpServer.msg.UserLoginRequestMsg;
-import ws.gm.system.httpServer.msg.UserRegisterRequestMsg;
-import ws.gm.system.httpServer.msg.UserRequestMsg;
+import ws.gm.features.actor.user.msg.UserAuthRequestMsg;
+import ws.gm.features.actor.user.msg.UserAuthResponseMsg;
+import ws.gm.features.actor.user.msg.UserLoginRequestMsg;
+import ws.gm.features.actor.user.msg.UserRegisterRequestMsg;
+import ws.gm.features.actor.user.msg.UserRequestMsg;
 import ws.gm.system.httpServer.utils.ResponseUtils;
 import ws.relationship.base.actor.WsActor;
 

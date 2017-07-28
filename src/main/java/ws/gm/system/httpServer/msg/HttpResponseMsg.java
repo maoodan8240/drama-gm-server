@@ -61,6 +61,13 @@ public class HttpResponseMsg {
     }
 
 
+    public static HttpResponseMsg createResponse(String className) {
+        HttpResponseMsg msg = new HttpResponseMsg();
+        msg.setErrorCode(0);
+        msg.setMsgType(className);
+        return msg;
+    }
+
     public static HttpResponseMsg createErrorResponse(String errorStringMsg) {
         HttpResponseMsg msg = new HttpResponseMsg();
         msg.setErrorCode(-2);
