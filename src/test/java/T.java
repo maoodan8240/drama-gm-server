@@ -1,22 +1,78 @@
-import ws.common.mongoDB.interfaces.MongoDBClient;
-import ws.common.utils.di.GlobalInjector;
-import ws.gm.Launcher;
-import ws.gm.system.config.AppConfig;
-import ws.gm.system.di.GlobalInjectorUtils;
-import ws.relationship.base.MagicWords_Mongodb;
-import ws.relationship.daos.paymentOrder.PaymentOrderDao;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
- * Created by zhangweiwei on 17-7-12.
+ * Created by lee on 17-7-12.
  */
 public class T {
     public static void main(String[] args) throws Exception {
-        AppConfig.init();
-        GlobalInjectorUtils.init();
-        Launcher._mongodbInit();
-        MongoDBClient MONGO_DB_CLIENT = GlobalInjector.getInstance(MongoDBClient.class);
-        PaymentOrderDao dao = GlobalInjector.getInstance(PaymentOrderDao.class);
-        dao.init(MONGO_DB_CLIENT, MagicWords_Mongodb.TopLevelPojo_All_Common);
-        System.out.println(dao.findAll().size());
+        String str = "Table_Item_103.tab";
+
+        String[] split = str.split(".");
+//        String content = split[1];
+//        String[] heads = content.split(";");
+//        String fileName = heads[2].split("=")[1].replaceAll("\"", "");
+//        System.out.println(fileName);
+
+
     }
+
+    public static String[] replaceHead(String[] arr, String head) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].contains(head)) {
+                arr[i] = head + "\n";
+            }
+        }
+        return arr;
+    }
+
+    public static List<TableFile> getFiles(List<String> arrayList, String head) {
+        int hpos = 0;
+        int epos = hpos + 1;
+        List<TableFile> arr = new ArrayList<>();
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (arrayList.get(i).equals(head)) {
+                hpos = i;
+                for (int x = hpos + 1; x < arrayList.size(); x++) {
+                    if (arrayList.get(x).equals(head)) {
+                        epos = x - 1;
+                        String content = arrayList.get(hpos + 1);
+                        String[] heads = content.split(";");
+                        String fileName = heads[2].split("=")[1].replaceAll("\"", "");
+                        StringBuffer sb = new StringBuffer();
+                        for (int j = hpos + 3; j < epos; j++) {
+                            if (!arrayList.get(j).equals("")) {
+                                sb.append(arrayList.get(j));
+                            }
+                        }
+                        arr.add(new TableFile(fileName, sb.toString()));
+                        hpos = epos + 1;
+                    }
+                }
+            }
+        }
+        return arr;
+    }
+
+    static class TableFile {
+        private String fileName;
+        private String fileContent;
+
+        public TableFile(String fileName, String fileContent) {
+            this.fileName = fileName;
+            this.fileContent = fileContent;
+        }
+
+        @Override
+        public String toString() {
+            return "F{" +
+                    "fileName='" + fileName + '\'' +
+                    ", fileContent='" + fileContent + '\'' +
+                    '}';
+        }
+    }
+
 }
+
+

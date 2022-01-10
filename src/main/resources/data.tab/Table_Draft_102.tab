@@ -1,0 +1,10 @@
+ID	轮数	心魔ID	心魔小图	心魔大图	对应人物ID
+ID	DraftNum	DraftID	DraftPic	DraftPoster	RoleID
+int	int	int	string	string	int
+1	1	1	lxx	10171	1
+2	1	2	sbt	10172	3
+3	1	3	cay	10173	5
+4	1	4	hfqmm	10174	6
+5	1	5	lls	10175	7
+6	1	6	nhm	10176	2
+7	1	7	xbm	10177	4

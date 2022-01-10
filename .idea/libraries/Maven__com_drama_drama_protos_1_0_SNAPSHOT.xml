@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.drama:drama-protos:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/drama/drama-protos/1.0-SNAPSHOT/drama-protos-1.0-20211117.085052-216.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/drama/drama-protos/1.0-SNAPSHOT/drama-protos-1.0-20211117.085052-216-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/drama/drama-protos/1.0-SNAPSHOT/drama-protos-1.0-20211117.085052-216-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

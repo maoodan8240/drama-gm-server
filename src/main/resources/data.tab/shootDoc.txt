@@ -1,0 +1,53 @@
+12121212RoomPlayer身上加属性 isLive
+List<canShootRoleId> 可以开枪的玩家
+LastShootRoleId 上一轮开枪的玩家Id
+room切换到shoot状态时计算所有可以开枪的玩家
+1,
+将配置中Table_Shoot_Row中type == 1的配置都取出来 放入List<Table_Shoot_Row>
+遍历所有<isLive的> 玩家的背包,满足List<Table_Shoot_Row>中Set字段任何一条视为可以开枪
+并且不能是LastShootRoleId,将满足的Table_Shoot_Row.Power存入List<Power>中作为<CAN_SHOOT>的返回参数
+将满足开枪条件的玩家添加到List<canShootRoleId>集合中
+2,
+通知所有玩家切换房間状态到Shoot
+3,
+所有玩家拉取<CAN_SHOOT>(无参)获取是否可以开枪 
+服务器遍历 List<canShootRoleId> 
+服务器返回<RESP_CAN_SHOOT>(返参 List<Power>) 如果没有自己的Id返回空List<Power>
+4,选择了开枪的玩家客户端请求 SHOOT_LIST 
+服务器返回SHOOT_LIST   List<RoomPlayer> RoomPlayer中有一些玩家的基本信息和是否存活
+5,
+玩家从List<Power>中选择 Power 武器类型和击杀玩家BeShootRoleId 发送 SHOOT (进参 isShoot 是否开枪 Power BeShootRoleId ) 
+==================================================================================================================
+此时玩家可以选择 			开枪							|| 				不开枪   
+				选择 	isShoot : true				||		选择 	isShoot : false
+				选择 	Power						||			
+				选择		BeShootRoleId				||
+==================================================================================================================
+6,
+服务器接收到<SHOOT>保存,服务器校验当所有人都已经做出开枪选择,
+将不开枪的人 isShoot=false 从List<canShootRoleId>删除,
+如果所有人都不开枪 List<canShootRoleId>为空,服务器切换到下一个房间状态
+随机出一个玩家成为开枪人LastShootRoleId,将LastShootRoleId设置成开枪玩家<ShootRoleId>,
+再次校验开枪玩家身上资源是否满足List<Table_Shoot_Row>中的<Set>
+计算开枪结果
+###服务器处理开枪逻辑检查被打的玩家isLive 直接逻辑中断,客户端没挡住##
+判断被打玩家是否持有可以挡枪的防弹衣
+==================================================================================================================
+判断Power是				power2						||	 				power1
+开枪玩家: 		扣除Table_Shoot_Row.Expend			||				扣除Table_Shoot_Row.Expend
+			优先扣除特殊消耗子弹(夜神的项链子弹)		||
+----------------------------------------------------||------------------------------------------------------------
+被打玩家:		扣除Table_Shoot_Row.Expend			||				优先扣除扣除Table_Shoot_Row.power1的Expend
+													||				如果没有pwoer1的Expend 再判断power2的Expend
+==================================================================================================================		
+被打玩家扣除成功则存活,扣除失败则死亡, 死亡玩家<isLive>设置成false
+并且死亡玩家ItemBag中type3(角色道具)全部给开枪玩家,type2(武器装备)随机一个给开枪玩家
+如果玩家射击的是NPC骆驼,检查骆驼是否有防具
+若果有防具,并且还有子弹,骆驼会反击,扣除骆驼身上的道具,
+被反击玩家执行被打玩家的逻辑检查是否有防具,扣除防具失败则死亡,被骆驼反击致死的玩家不会掉落道具
+计算下轮枪战信息
+执行步骤1
+7,
+结果都广播给所有玩家 RESP_SHOOT (返参 shooRoleId 开枪玩家 beShootRoleId 被打玩家 isLive是否死亡 Power开枪道具 DefPower防御道具 List<Item>掉落道具展示)
+8,
+客户端 执行步骤3

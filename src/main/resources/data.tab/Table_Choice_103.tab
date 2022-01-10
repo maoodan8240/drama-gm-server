@@ -1,0 +1,6 @@
+ID	行为人	行为人名	选择目标	目标名
+Id	RoleId	ActorName	ChosenId	Chosenname
+int	int	int	int	string
+1	3	丽丽娜依	1	陈怀安
+2	3	丽丽娜依	6	铁男
+3	3	丽丽娜依	7	夜神

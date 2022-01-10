@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cb5aa326-0eb0-4fd2-a000-524fe2a925f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/room/RoomActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/room/ctrl/RoomCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/room/ctrl/_RoomCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/room/msg/AllRoomPlayerMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/room/msg/KillRoomMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/room/msg/QueryAllRoomBasicInfoMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/room/pojo/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/room/pojo/RoomPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/table/TableDataActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/table/ctrl/TableDataCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/table/ctrl/_TableDataCtrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/table/msg/QueryTableDataListMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/table/msg/QueryTableDataMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/table/msg/UploadTableDataMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/utils/FTPClientUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/di/BindAllControlers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/shutdownHook/ShutdownHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/GameServerPackageHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/GameServerPackageHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/DataActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/DataActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/base/PaymentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/base/PaymentData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/base/RechargeRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/base/RechargeRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/ctrl/DataCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/ctrl/DataCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/ctrl/_DataCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/ctrl/_DataCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/msg/NewlyAndActivePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/msg/NewlyAndActivePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/msg/NewlyAndActivityData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/msg/NewlyAndActivityData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/msg/QueryLvDistribution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/msg/QueryLvDistribution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/msg/QueryNewlyAndActivePlayerCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/msg/QueryNewlyAndActivePlayerCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/msg/QueryPaymentByDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/msg/QueryPaymentByDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/msg/QueryPveDistribution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/msg/QueryPveDistribution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/msg/QueryRechargeRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/msg/QueryRechargeRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/msg/QueryRemainData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/msg/QueryRemainData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/data/msg/QueryTodayData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/data/msg/QueryTodayData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/dayRegister/DayRegisterActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/dayRegister/DayRegisterActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/dayReport/DayReportActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/dayReport/DayReportActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/example.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/example.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/gmCommond/SendGmCommandMsgActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/gmCommond/SendGmCommandMsgActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/gmCommond/ctrl/SendGmCommandMsgCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/gmCommond/ctrl/SendGmCommandMsgCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/gmCommond/ctrl/_SendGmCommandMsgCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/gmCommond/ctrl/_SendGmCommandMsgCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/gmCommond/msg/SendGmCommandMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/gmCommond/msg/SendGmCommandMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/mail/MailActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/mail/MailActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/mail/ctrl/MailCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/mail/ctrl/MailCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/mail/ctrl/_MailCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/mail/ctrl/_MailCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/mail/msg/MailMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/mail/msg/MailMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/paymentReport/PaymentReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/paymentReport/PaymentReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/queryPlayerBasicInfo/QueryPlayerBasicInfoActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/queryPlayerBasicInfo/QueryPlayerBasicInfoActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/queryPlayerBasicInfo/ctrl/QueryPlayerBasicInfoCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/queryPlayerBasicInfo/ctrl/QueryPlayerBasicInfoCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/queryPlayerBasicInfo/ctrl/_QueryPlayerBasicInfoCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/queryPlayerBasicInfo/ctrl/_QueryPlayerBasicInfoCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/queryPlayerBasicInfo/msg/QueryPlayerBasicInfoMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/queryPlayerBasicInfo/msg/QueryPlayerBasicInfoMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/UserActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/UserActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/ctrl/UserCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/ctrl/UserCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/ctrl/_UserCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/ctrl/_UserCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/dao/_UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/dao/_UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/msg/QueryPermissionResponseMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/msg/QueryPermissionResponseMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/msg/QueryUsersResponseMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/msg/QueryUsersResponseMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/msg/UserAuthRequestMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/msg/UserAuthRequestMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/msg/UserAuthResponseMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/msg/UserAuthResponseMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/msg/UserLoginRequestMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/msg/UserLoginRequestMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/msg/UserLoginResponseMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/msg/UserLoginResponseMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/msg/UserRegisterRequestMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/msg/UserRegisterRequestMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/msg/UserRegisterResponsetMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/msg/UserRegisterResponsetMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/msg/UserRequestMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/msg/UserRequestMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/pojo/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/pojo/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/user/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/user/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/utils/QueryCenterPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/utils/QueryCenterPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/WhiteBlackListActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/WhiteBlackListActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/base/WhiteBlackList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/base/WhiteBlackList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/ctrl/WhiteBlackListCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/ctrl/WhiteBlackListCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/ctrl/_WhiteBlackListCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/ctrl/_WhiteBlackListCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/msg/AddBlackList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/msg/AddBlackList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/msg/AddWhiteList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/msg/AddWhiteList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/msg/LockPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/msg/LockPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/msg/QueryAllBlackList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/msg/QueryAllBlackList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/msg/QueryAllLockPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/msg/QueryAllLockPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/msg/QueryAllWhiteList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/msg/QueryAllWhiteList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/msg/RemoveFromBlackList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/msg/RemoveFromBlackList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/actor/whiteblacklist/msg/RemoveFromWhiteList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/actor/whiteblacklist/msg/RemoveFromWhiteList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/manager/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/manager/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/manager/ActionContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/manager/ActionContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/manager/AppDebugger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/manager/AppDebugger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/manager/AppDebuggerMBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/manager/AppDebuggerMBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/manager/AppDebuggerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/manager/AppDebuggerUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/manager/msg/GmMail_Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/manager/msg/GmMail_Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/session/SessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/session/SessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/features/session/_SessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/features/session/_SessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/actor/WS_Gm_RootActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/actor/Dm_Gm_RootActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/actor/WsActorSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/actor/DmActorSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/actor/WsGmActorSystemPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/actor/DmGmActorSystemPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/di/BindAllBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/di/BindAllBeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/di/BindAllControlers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/di/BindAllDaos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/di/BindAllDaos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/di/GlobalInjectorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/di/GlobalInjectorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/di/dbClients/GameCommonDBClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/di/dbClients/GameCommonDBClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/di/dbClients/_GameCommonDBClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/di/dbClients/_GameCommonDBClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/httpServer/RequestJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/httpServer/RequestJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/httpServer/Ws_Gm_HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/httpServer/Dm_Gm_HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/httpServer/Ws_Gm_HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/httpServer/Ws_Gm_HttpServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/httpServer/inf/AbstractHttpMessageCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/httpServer/inf/AbstractHttpMessageCtrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/httpServer/msg/HttpRequestMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/httpServer/msg/HttpRequestMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/httpServer/msg/HttpResponseMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/httpServer/msg/HttpResponseMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/httpServer/utils/InputStreamUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/httpServer/utils/InputStreamUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/httpServer/utils/ParseJsonToMessageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/httpServer/utils/ParseJsonToMessageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/httpServer/utils/ResponseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/httpServer/utils/ResponseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/httpServer/utils/WsGmHttpServerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/httpServer/utils/DmGmHttpServerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/jmx/JmxJolokiaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/jmx/JmxJolokiaClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/schedule/Cron4jUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/schedule/Cron4jUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/schedule/msg/In_RefreshUpdatedPlayerDataToMongodbRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/schedule/msg/In_RefreshUpdatedPlayerDataToMongodbRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/schedule/msg/In_RemoveOverTimePlayerDataFromRedisAndRefreshToMongodbRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/schedule/msg/In_RemoveOverTimePlayerDataFromRedisAndRefreshToMongodbRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/shutdownHook/ShutdownHook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/shutdownHook/_ShutdownHook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/shutdownHook/_ShutdownHook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ws/gm/system/shutdownHook/msg/ServerBeginToShutDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/drama/gm/system/shutdownHook/msg/ServerBeginToShutDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jolokia-access.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jolokia-access.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/T.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/T.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\egret\.m2\repository" />
+        <option name="userSettingsFile" value="C:\Users\egret\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1yX6sjmFXXFLJinnwWdlp2INJGQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/drama/gm/features/actor" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work_space\drama-gm-server\src\main\java\drama\gm\features\actor" />
+      <recent name="D:\work_space\ws-gm-server\src\main\java\ws\gm\features\actor" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="drama.gm.features.actor.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.gm-server">
+    <configuration name="T" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="T" />
+      <module name="drama-gm-server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gm-server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="drama.gm.Launcher" />
+      <module name="drama-gm-server" />
+      <option name="PROGRAM_PARAMETERS" value="drama.gm.Launcher" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.T" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb5aa326-0eb0-4fd2-a000-524fe2a925f3" name="Default Changelist" comment="" />
+      <created>1632385794625</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632385794625</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="content" />
+        <watch expression="arrayList.get(hpos + 3)" language="JAVA" />
+        <watch expression="sesseionId" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
